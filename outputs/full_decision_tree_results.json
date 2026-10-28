@@ -1,0 +1,88 @@
+{
+  "model": "DecisionTreeClassifier",
+  "params": {
+    "max_depth": 6,
+    "min_samples_leaf": 20,
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "roc_auc": 0.9339,
+    "pr_auc": 0.743,
+    "best_threshold": 0.9554,
+    "best_f1": 0.8041,
+    "precision_at_best_thresh": 0.7661,
+    "recall_at_best_thresh": 0.8461,
+    "confusion_matrix": [
+      [
+        92715,
+        693
+      ],
+      [
+        413,
+        2270
+      ]
+    ]
+  },
+  "top_features": [
+    {
+      "feature": "total_unique_cp",
+      "importance": 0.5246
+    },
+    {
+      "feature": "days_since_freeze",
+      "importance": 0.3442
+    },
+    {
+      "feature": "is_frozen_flag",
+      "importance": 0.0624
+    },
+    {
+      "feature": "days_since_last_kyc",
+      "importance": 0.0321
+    },
+    {
+      "feature": "branch_turnover",
+      "importance": 0.019
+    },
+    {
+      "feature": "active_lifespan_days",
+      "importance": 0.0025
+    },
+    {
+      "feature": "fan_in_out_ratio",
+      "importance": 0.0019
+    },
+    {
+      "feature": "min_amount",
+      "importance": 0.0018
+    },
+    {
+      "feature": "round_5k_ratio",
+      "importance": 0.0011
+    },
+    {
+      "feature": "account_status",
+      "importance": 0.0011
+    },
+    {
+      "feature": "account_age_days",
+      "importance": 0.001
+    },
+    {
+      "feature": "median_amount",
+      "importance": 0.0008
+    },
+    {
+      "feature": "cc_sum",
+      "importance": 0.0008
+    },
+    {
+      "feature": "sa_count",
+      "importance": 0.0007
+    },
+    {
+      "feature": "peak_month_vol_ratio",
+      "importance": 0.0006
+    }
+  ]
+}
