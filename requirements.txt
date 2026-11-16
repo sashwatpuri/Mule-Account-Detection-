@@ -1,0 +1,24 @@
+# ==============================================================================
+# RBIH AML Mule Account Detection - Unified Project Dependencies
+# ==============================================================================
+
+# 1. Core Data Processing & Tabular ML (Teammate Baseline Pipeline)
+polars>=0.20.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# 2. Graph Neural Network Stack (Utkarsh's HeteroFinancialGraphSAGE Pipeline)
+# Note: For CUDA-accelerated training on NVIDIA GPUs, install torch with CUDA:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu126
+torch>=2.1.0
+torch-geometric>=2.4.0
+
+# 3. System Telemetry, Profiling & Utilities
+psutil>=5.9.0
+tqdm>=4.65.0
+
+# 4. Automated Testing & Verification
+pytest>=7.4.0
