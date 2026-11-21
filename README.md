@@ -35,7 +35,6 @@ Mule-Account-Detection-Reference/
 │   ├── run_100shard_gnn.py                   # Master CLI orchestrator for GNN pipeline
 │   ├── run_baseline_10k.py                   # Run 10k baseline Decision Tree
 │   ├── run_full_extraction.py                # Full tabular feature extraction
-│   ├── generate_submission.py                # Generate official competition submission CSV
 │   └── eda/                                  # Exploratory data analysis scripts
 ├── src/
 │   ├── data/                                 # Tabular data loaders & batch samplers
@@ -58,14 +57,10 @@ Mule-Account-Detection-Reference/
 │   │   └── metrics.py                        # Classification metric utilities
 │   └── preprocessing/                        # Out-of-core GNN streaming feature extraction
 │       └── build_100shard_inductive_features.py
-├── submissions/                              # Competition formatted submission CSVs
-│   ├── baseline_decision_tree_submission.csv
-│   └── notebook_models_submission.csv
 ├── tests/
 │   ├── test_100shard_inductive.py            # 5-point automated GNN integrity & leakage tests
 │   ├── test_decision_tree.py                 # Baseline decision tree tests
-│   ├── test_sampling.py                      # Stratified sampling ratio tests
-│   └── test_submission_format.py             # Competition CSV submission schema tests
+│   └── test_sampling.py                      # Stratified sampling ratio tests
 ├── DECISION_TREE.md                          # Visual decision flowchart & baseline heuristics
 ├── requirements.txt                          # Unified project dependencies
 └── README.md
@@ -195,11 +190,8 @@ python scripts/run_baseline_10k.py
 # 2. Extract tabular features across all partitions
 python scripts/run_full_extraction.py
 
-# 3. Generate official competition submission CSV
-python scripts/generate_submission.py
-
-# 4. Run baseline test suite
-pytest tests/test_decision_tree.py tests/test_sampling.py tests/test_submission_format.py
+# 3. Run baseline test suite
+python -m pytest tests/test_decision_tree.py tests/test_sampling.py
 ```
 
 *For decision rules, tree depth, and red-herring resolution, see [`DECISION_TREE.md`](DECISION_TREE.md).*
@@ -247,5 +239,5 @@ The 100-shard GraphSAGE pipeline was independently audited and awarded a **`PASS
 
 ## 8. Authors & Contributions
 
-- **Shashwat Puri**: Tabular feature extraction pipeline, exploratory data analysis, Decision Tree baseline, window detector, and competition submission generators.
+- **Shashwat Puri**: Tabular feature extraction pipeline, exploratory data analysis, Decision Tree baseline, and window detector.
 - **Utkarsh**: Heterogeneous Edge-Aware GraphSAGE architecture, out-of-core streaming 100-shard graph feature engineering, split-aware inductive protocol, GPU mini-batch neighbor sampler, and forensic audit validation suite.
