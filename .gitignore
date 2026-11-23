@@ -1,10 +1,23 @@
 # Raw Dataset Directories (Never commit raw RBIH data)
 Dataset/
 /Dataset/
+DataSet/
+/DataSet/
 /data/raw/
 
 # Generated Graph Tensors & Intermediate Binary Data (Regenerated via scripts)
 /data/
+checkpoints/*.pt
+
+# Frontend artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+.env
+.env.local
+
+# Submissions
+submissions/
 
 # Python bytecode & cache
 __pycache__/
@@ -27,4 +40,3 @@ Thumbs.db
 # Temporary files & logs
 *.log
 scratch/
-submissions/

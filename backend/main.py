@@ -28,7 +28,6 @@ import joblib
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATASET_DIR = os.path.join(BASE_DIR, "DataSet")
 OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
-ALT_OUTPUTS_DIR = os.path.join(BASE_DIR, "Mule-Account-Detection--main", "outputs")
 
 def find_file(relative_paths: List[str]) -> str:
     for rel in relative_paths:
@@ -39,19 +38,16 @@ def find_file(relative_paths: List[str]) -> str:
 
 # Locate model, evaluation JSON, and dataset
 MODEL_PATH = find_file([
-    "outputs/baseline_decision_tree.joblib",
-    "Mule-Account-Detection--main/outputs/baseline_decision_tree.joblib"
+    "outputs/baseline_decision_tree.joblib"
 ])
 
 EVAL_PATH = find_file([
-    "outputs/full_decision_tree_results.json",
-    "Mule-Account-Detection--main/outputs/full_decision_tree_results.json"
+    "outputs/full_decision_tree_results.json"
 ])
 
 DATASET_PATH = find_file([
-    "Mule-Account-Detection--main/outputs/train_features_full.parquet",
     "outputs/train_features_full.parquet",
-    "Mule-Account-Detection--main/outputs/train_10k_baseline.parquet"
+    "outputs/train_10k_baseline.parquet"
 ])
 
 TRANSACTIONS_INDEX_PATH = os.path.join(DATASET_DIR, "transactions_index.json")
