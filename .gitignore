@@ -7,7 +7,6 @@ DataSet/
 
 # Generated Graph Tensors & Intermediate Binary Data (Regenerated via scripts)
 /data/
-checkpoints/*.pt
 
 # Frontend artifacts
 frontend/node_modules/
