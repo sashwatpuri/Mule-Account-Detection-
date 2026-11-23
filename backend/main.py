@@ -38,6 +38,7 @@ def find_file(relative_paths: List[str]) -> str:
 
 # Locate model, evaluation JSON, and dataset
 MODEL_PATH = find_file([
+    "outputs/best_model_bundle.joblib",
     "outputs/baseline_decision_tree.joblib"
 ])
 
@@ -46,8 +47,7 @@ EVAL_PATH = find_file([
 ])
 
 DATASET_PATH = find_file([
-    "outputs/train_features_full.parquet",
-    "outputs/train_10k_baseline.parquet"
+    "outputs/train_features_full.parquet"
 ])
 
 TRANSACTIONS_INDEX_PATH = os.path.join(DATASET_DIR, "transactions_index.json")
@@ -88,7 +88,7 @@ STATE: Dict[str, Any] = {
 }
 
 def load_backend_state():
-    print(f"Loading Decision Tree model from: {MODEL_PATH}")
+    print(f"Loading Production ML model from: {MODEL_PATH}")
     bundle = joblib.load(MODEL_PATH)
     STATE["model_bundle"] = bundle
 
