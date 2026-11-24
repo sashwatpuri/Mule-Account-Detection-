@@ -1,0 +1,122 @@
+[
+  {
+    "model_name": "Decision Tree (Leaky Baseline)",
+    "pr_auc_mean": 0.7113013286824302,
+    "pr_auc_std": 0.006897233031756671,
+    "pr_auc_ci_lower": 0.6876878369390406,
+    "pr_auc_ci_upper": 0.7268241312751906,
+    "roc_auc_mean": 0.9190574460173847,
+    "roc_auc_std": 0.0055718460229886935,
+    "f1_mean": 0.7597146486199318,
+    "f1_std": 0.055256349069140995,
+    "calibrated_threshold": 0.982810122593827
+  },
+  {
+    "model_name": "LightGBM (Leaky Baseline)",
+    "pr_auc_mean": 0.7722107273821343,
+    "pr_auc_std": 0.012349123420024711,
+    "pr_auc_ci_lower": 0.7507771046811025,
+    "pr_auc_ci_upper": 0.7897541802058298,
+    "roc_auc_mean": 0.9502203795169702,
+    "roc_auc_std": 0.00405533322878661,
+    "f1_mean": 0.8225782801552468,
+    "f1_std": 0.007815432869996438,
+    "calibrated_threshold": 0.8463454790276886
+  },
+  {
+    "model_name": "Decision Tree (Clean Pre-Inv)",
+    "pr_auc_mean": 0.6721042928866267,
+    "pr_auc_std": 0.018014417353877998,
+    "pr_auc_ci_lower": 0.6514531287671431,
+    "pr_auc_ci_upper": 0.6930158010694828,
+    "roc_auc_mean": 0.8964677183698317,
+    "roc_auc_std": 0.010474539258773547,
+    "f1_mean": 0.7582609173428896,
+    "f1_std": 0.018884309067806814,
+    "calibrated_threshold": 0.9751093406885479
+  },
+  {
+    "model_name": "Logistic Regression (Clean)",
+    "pr_auc_mean": 0.6525418577749631,
+    "pr_auc_std": 0.019905639562292625,
+    "pr_auc_ci_lower": 0.6293623934559103,
+    "pr_auc_ci_upper": 0.6732626572959184,
+    "roc_auc_mean": 0.9354453583652393,
+    "roc_auc_std": 0.007126104807395706,
+    "f1_mean": 0.6886723408265769,
+    "f1_std": 0.011894814515058909,
+    "calibrated_threshold": 0.9087616468102491
+  },
+  {
+    "model_name": "Gaussian Naive Bayes (Clean)",
+    "pr_auc_mean": 0.22309068017119582,
+    "pr_auc_std": 0.007082798168565839,
+    "pr_auc_ci_lower": 0.20489692737568477,
+    "pr_auc_ci_upper": 0.22991741027034934,
+    "roc_auc_mean": 0.8607166502653969,
+    "roc_auc_std": 0.005002380975034334,
+    "f1_mean": 0.33266914217485744,
+    "f1_std": 0.00939082942759487,
+    "calibrated_threshold": 0.053898573645638645
+  },
+  {
+    "model_name": "ANN / Deep MLP (Clean)",
+    "pr_auc_mean": 0.6608204491865566,
+    "pr_auc_std": 0.02128612660427545,
+    "pr_auc_ci_lower": 0.6354027846581674,
+    "pr_auc_ci_upper": 0.6779402529566796,
+    "roc_auc_mean": 0.9357212619846436,
+    "roc_auc_std": 0.006338794092079642,
+    "f1_mean": 0.7128445014960735,
+    "f1_std": 0.02351822382238237,
+    "calibrated_threshold": 0.8559547185897827
+  },
+  {
+    "model_name": "Tabular Bi-LSTM (Clean)",
+    "pr_auc_mean": 0.6935293039686774,
+    "pr_auc_std": 0.016513305012877337,
+    "pr_auc_ci_lower": 0.6702085530658198,
+    "pr_auc_ci_upper": 0.7126594130143019,
+    "roc_auc_mean": 0.9364410229348719,
+    "roc_auc_std": 0.008126120419783625,
+    "f1_mean": 0.7456861172650058,
+    "f1_std": 0.01724221814547301,
+    "calibrated_threshold": 0.9248397827148438
+  },
+  {
+    "model_name": "1D-CNN (Clean)",
+    "pr_auc_mean": 0.6054923821198486,
+    "pr_auc_std": 0.030217373047279294,
+    "pr_auc_ci_lower": 0.5778985574886366,
+    "pr_auc_ci_upper": 0.6220748026373307,
+    "roc_auc_mean": 0.9213839392806866,
+    "roc_auc_std": 0.005931404500141328,
+    "f1_mean": 0.648871102890246,
+    "f1_std": 0.029934855527304398,
+    "calibrated_threshold": 0.8882371187210083
+  },
+  {
+    "model_name": "LightGBM (Clean Pre-Inv)",
+    "pr_auc_mean": 0.7363648670513354,
+    "pr_auc_std": 0.01433493118018906,
+    "pr_auc_ci_lower": 0.7135835882731952,
+    "pr_auc_ci_upper": 0.7536381543836042,
+    "roc_auc_mean": 0.9421791247805895,
+    "roc_auc_std": 0.007201594766295855,
+    "f1_mean": 0.7856828910816755,
+    "f1_std": 0.009091763821350523,
+    "calibrated_threshold": 0.7971381035099363
+  },
+  {
+    "model_name": "GraphSAGE (PyG Hetero GNN)",
+    "pr_auc_mean": 0.47771198969246276,
+    "pr_auc_std": 0.027688152976338955,
+    "pr_auc_ci_lower": 0.43802061542832965,
+    "pr_auc_ci_upper": 0.482287520056394,
+    "roc_auc_mean": 0.9091467950193926,
+    "roc_auc_std": 0.0038364913115648655,
+    "f1_mean": 0.4913269999487002,
+    "f1_std": 0.07594108039278981,
+    "calibrated_threshold": 0.8653725862503052
+  }
+]

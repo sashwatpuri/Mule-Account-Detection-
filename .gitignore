@@ -39,3 +39,4 @@ Thumbs.db
 # Temporary files & logs
 *.log
 scratch/
+outputs/graph_edges.parquet

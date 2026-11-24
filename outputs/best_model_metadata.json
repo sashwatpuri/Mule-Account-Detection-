@@ -1,13 +1,14 @@
 {
-  "model_name": "LightGBM (Paper Baseline)",
+  "model_name": "LightGBM (Clean Pre-Inv)",
   "best_model_file": "best_model.joblib",
   "metrics": {
-    "roc_auc": 0.948477940931425,
-    "pr_auc": 0.7551222626781555,
-    "best_f1": 0.8214030064423765,
-    "precision": 0.7900172117039587,
-    "recall": 0.8553857622064853,
-    "best_threshold": 0.8890650867007356
+    "roc_auc": 0.9422,
+    "pr_auc": 0.7364,
+    "best_f1": 0.7857,
+    "precision": 0.7779,
+    "recall": 0.7983,
+    "best_threshold": 0.7971
   },
-  "feature_count": 87
+  "feature_count": 72,
+  "protocol": "Stratified 5-Fold Cross-Validation on 96,091 accounts with inner-split threshold calibration (Zero Leakage)"
 }
