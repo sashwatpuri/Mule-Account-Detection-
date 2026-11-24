@@ -6,8 +6,6 @@ DataSet/
 /data/raw/
 
 # Generated Graph Tensors & Intermediate Binary Data (Regenerated via scripts)
-/data/
-
 # Frontend artifacts
 frontend/node_modules/
 frontend/dist/
@@ -39,4 +37,3 @@ Thumbs.db
 # Temporary files & logs
 *.log
 scratch/
-outputs/graph_edges.parquet
